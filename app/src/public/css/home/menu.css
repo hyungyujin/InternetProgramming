@@ -1,0 +1,61 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font: bold 11px/1.5em Verdana;
+}
+
+.bg-cover {
+    background: url('main.jpg') no-repeat center center/cover;
+    height: 180px;
+}
+
+#demo-container{
+    padding: 0;
+    background: #B4C5F0;
+}
+
+#simple-menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#simple-menu li {
+    width: 360px;
+    text-align: center;
+}
+
+#simple-menu li a {
+    background-size: inline-flex;
+    display:block;
+    background: url('tableft.gif') no-repeat left top;
+    text-decoration: none;
+    padding:0 0 0 8px;
+    align-items: center;
+}
+
+#simple-menu li a span {
+    background-size: cover;
+    font-size: 20px;
+    display:block;
+    background:url("tabright.gif") no-repeat right top;
+    padding:5px 15px 4px 6px;
+    color:#6B78A9;
+  }
+  #simple-menu li a:hover span {
+    color:#6B78A9;
+}
+
+#simple-menu li a:hover {
+    background-position:0% -42px;
+}
+
+#simple-menu a:hover span {
+    background-position:100% -42px;
+}

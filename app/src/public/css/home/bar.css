@@ -1,0 +1,49 @@
+.bar {
+    position: relative; /*center*/
+    height: 30px;
+    background:url("barmid.png") no-repeat; /* change relative path */
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+    width: 0;
+    transition: width 1s;  /* add transition */
+}
+
+.bar::after {
+    content: "";
+    position: absolute;/*perents center*/
+    right: -25px; /* adjust position to the right */
+    top: 0;
+    bottom: 0;
+    width: 30px; 
+    background: url("barend.png") no-repeat; /* no recycle */
+    background-size: contain; /*auto*/
+}
+
+.container {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    width:150px;
+    height: 50px;
+    margin-right: 10px;
+    background-color:rgb(255, 248, 220);
+    padding: 5px;
+}
+
+.login {
+    width:170px;
+    height: 150px;
+    background-color:rgb(214, 214, 214);
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#graph {
+    width: 100%; /* Adjust width to your needs */
+    height: 3000px; /* Adjust height to your needs */
+    overflow-y: auto; 
+    overflow-x: hidden;  
+}

@@ -1,0 +1,187 @@
+.card-default {
+  display: table;
+  width: 100%;
+  max-height: 161px;
+  border-radius: 4px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  height: 161px; }
+
+.card-default .card-inner {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.card-default .card-count {
+  display: block;
+  height: 31px;
+  padding: 0 24px 0 24px;
+  font-size: 20px;
+  color: #ccc;
+  line-height: normal;
+  font-weight: bold; }
+
+.card-default .card-txt {
+  width: 100%;
+  display: block;
+  padding: 0 24px 0 24px;
+  font-size: 16px;
+  color: #333;
+  line-height: 24px;
+  font-weight: 600;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word !important;
+  word-break: normal !important;
+  white-space: pre-wrap !important; }
+
+.card-default .card-link {
+  display: block;
+  width: 100%;
+  display: table;
+  table-layout: fixed; }
+
+.card-default .card-inner {
+  position: relative;
+  display: table-cell; }
+
+.card-default .card-count + .card-txt {
+  padding-top: 9px; }
+
+.card-default.size-min {
+  height: 72px;
+  overflow: hidden; }
+
+.card-default.size-min .card-inner {
+  height: 72px;
+  text-align: center;
+  padding: 0; }
+
+.card-default.size-min .card-txt {
+  max-height: 48px;
+  overflow: hidden;
+  text-align: center;
+  -webkit-line-clamp: 2; }
+
+.card-default.size-min .card-link {
+  height: 72px;
+  position: relative;
+  display: table;
+  width: 100%; }
+
+.card-default.size-min .card-link:hover .card-inner {
+  background: #0064FF; }
+
+.card-default.size-min .card-link:hover .card-txt {
+  color: #fff; }
+
+.card-default.size-min .card-inner {
+  text-align: center;
+  vertical-align: middle; }
+
+.card-apps {
+  position: relative;
+  width: 284px; }
+
+.card-apps .card-link {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px; }
+
+.card-apps .card-link:hover + .card-inner {
+  border-radius: 4px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; }
+
+.card-apps .card-inner {
+  width: 284px;
+  height: 250px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.19), 0 0 0 1px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff; }
+
+.card-apps .card-img {
+  position: relative;
+  height: 174px;
+  width: 100%;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  box-sizing: border-box; }
+
+.card-apps .card-img img {
+  width: 100%; }
+
+.card-apps .card-subject {
+  padding-top: 11px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px; }
+
+.card-apps .card-subject .subject-txt {
+  padding-top: 4px;
+  display: block;
+  font-size: 16px;
+  color: #333;
+  line-height: normall;
+  font-weight: bold;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.card-apps .card-subject .subject-info-genre {
+  font-size: 12px;
+  color: #999;
+  line-height: normall;
+  font-weight: normal; }
+
+.card-accordion {
+  position: relative; }
+
+.card-accordion .card-inner {
+  height: 161px;
+  padding-bottom: 32px; }
+
+.card-accordion .card-inner .card-txt {
+  height: 81px;
+  overflow: hidden; }
+
+.card-accordion:hover .card-inner::after {
+  display: none; }
+
+.card-accordion:hover, .card-accordion.active {
+  position: relative;
+  z-index: 1;
+  background-color: #0064FF;
+  border-color: #0064FF ;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.2); }
+
+.card-accordion:hover .card-count, .card-accordion.active .card-count {
+  color: #ffffff; }
+
+.card-accordion:hover .card-txt, .card-accordion.active .card-txt {
+  color: #ffffff; }
+
+.card-accordion:hover .card-inner::after, .card-accordion.active .card-inner::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 9px 0 9px;
+  border-color: #ff5000 transparent transparent transparent;
+  transform: translateX(-50%); }
+
+.card-accordion.active:hover .card-inner::after {
+  display: block; }

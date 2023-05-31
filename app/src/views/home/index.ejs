@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/home/menu.css">
+    <link rel="stylesheet" href="/css/home/bar.css">
+  </head>
+  <body>
+    <div class="bg-cover"></div>  
+    <div id="demo-container">
+        <ul id="simple-menu">
+          <li><a><span>소개 글</span></a></li>
+          <li><a href="/"><span>자료</span></a></li>
+          <li><a><span>결제</span></a></li>
+          <li><a href="/inquiry"><span>문의상항</span></a></li>
+        </ul>
+    </div>
+    <div class="container">
+      <div class="list">
+          <select name="pets" id="pet-select">
+            <option value="">선택</option>
+            <option value="select1">Select1</option>
+          </select>
+      </div>
+      <div id="graph"></div>
+      <div class="login">
+        <form>
+          ID: <input type="text" name="id"><br>
+          PW: <input type="password" name="pw"><br>
+          <input id="loginBtn" type="button" value="로그인">
+          <input id="signupBtn" type="button" value="회원가입">
+        </form>
+      </div>
+    </div>
+
+    <script>
+      var data = [4, 9, 15, 7, 11, 14];
+      var labels = ["a", "b", "c", "d", "e", "f"];
+      var maxData = Math.max(...data);
+      var graph = document.getElementById("graph");
+      var bars = [];  // Define the bars array
+
+      // This function clears existing bars
+      function clearBars() {
+        while (graph.firstChild) {
+          graph.firstChild.remove();
+        }
+        // Also clear the bars array
+        bars = [];
+      }
+
+      // This function creates a new bar
+      function createBar(labelName, i) {
+        var label = document.createElement("div");
+        label.textContent = labelName;
+        graph.appendChild(label);
+        var bar = document.createElement("div");
+        bar.className = "bar";
+        graph.appendChild(bar);
+        // Add the new bar to the bars array
+        bars.push(bar);
+        setTimeout(function() {
+          bar.style.width = ((data[i] / maxData) * 98) + "%";
+        }, 500);  // Delay for 0.5 second
+      }
+
+      window.onload = function() {
+        document.getElementById("pet-select").addEventListener("change", function() {
+          clearBars();
+          if (this.value === "select1") {
+            // Create new bars and their labels
+            for (var i = 0; i < labels.length; i++) {
+              createBar(labels[i], i);
+            }
+          }
+        });  
+        document.getElementById("signupBtn").addEventListener("click", function() {
+          window.location.href = "/signup";
+        });
+      }
+  </script>
+  </body>
+</html>
