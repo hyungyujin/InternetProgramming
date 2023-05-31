@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 문의사항 탭입니다 </title>
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/card.css">
+        <link rel="stylesheet" href="../css/tab.css">
+        <link rel="stylesheet" href="../css/base-inquiry.css">
+        <link rel="stylesheet" href="../css/cs-inqury.css">
+        <link rel="stylesheet" href="../css/layout.css">
+        <link rel="stylesheet" href="../css/help.css">
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+        
+        $(document).ready(function() {
+        // FAQ 답변 토글 이벤트 리스너
+        $('#faqText1').on('mouseleave', function() {
+            $('#faqAnswer1').hide();
+        });
+    });
+        
+        $(document).ready(function() {
+        // FAQ 답변 토글 이벤트 리스너
+        $('#faqText2').on('mouseleave', function() {
+            $('#faqAnswer2').hide();
+        });
+    });
+
+
+        </script>
+    </head>
+    <body>
+        <div class="bg-cover">
+        </div>
+        <div id=""demo-container">
+        <ul id="simple-menu">
+            <li><a><span id="tit-int">소개 글</span></a></li>
+            <li><a><span id="tit-mat">자료</span></a></li>
+            <li><a><span id="tit-pay">결제</span></a></li>
+            <li><a><span id="tit-inq">문의사항</span></a></li>
+        </ul>
+        </div>
+
+        <!-- 자주찾는 질문 -->
+        <div class="layout-content">
+            <div class="grid-center" style="display:block;">
+                <div class="header">
+                    <h3 class="header-tit">자주 찾는 질문 모음</h3>
+                </div>
+                
+                <div class="module-tab tab-card" id="hitsListDiv">
+                    <div class="tab-nav column-5 clamp-2 ">
+                        <ol>
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">01</span>
+                                            <span class="card-txt" id="faqText1">직접 찾아가고 싶은데 자세한 위치를 모르겠어요</span>
+                                            <div class="answer-tab" id="faqAnswer1">
+                                                경기도 용인시 처인구 명지로 116에 위치해 있으며
+                                                자세한 위치를 지도를 통해서 보여드리겠습니다
+                                                <p>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6879.171840686153!2d127.18066846625932!3d37.22468580083029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b4e209f014eaf%3A0x9ef0c0a5f92a2165!2z66qF7KeA64yA7ZWZ6rWQIOyekOyXsOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1684308901454!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                                </iframe>
+                                                </p>
+                                            </div>
+                                        </span>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">02</span>
+                                            <span class="card-txt" id="faqText2">너무 힘이 들어요 이걸 어디서 뭘 어떻게 해야할지 모르겠어요</span>
+                                            <div class="answer-tab" id="faqAnswer2">
+                                                사실 그건 저도 잘 몰라요 그냥 생각나는대로 되는데로 쓰고있는 중이에요
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">03</span>
+                                            <span class="card-txt" id="faqText3">질문3</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">04</span>
+                                            <span class="card-txt" id="faqText4">질문4</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">05</span>
+                                            <span class="card-txt" id="faqText5">질문5</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                    
+                    <div class="tab-nav column-5 clamp-2 length-5">
+                        <ol>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">06</span>
+                                            <span class="card-txt" id="faqText6">질문6</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">07</span>
+                                            <span class="card-txt" id="faqText7">질문7</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">08</span>
+                                            <span class="card-txt" id="faqText8">질문8</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">09</span>
+                                            <span class="card-txt" id="faqText9">질문9</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <div class="module-card card-default card-accordion">
+                                        <span class="card-inner">
+                                            <span class="card-count">10</span>
+                                            <span class="card-txt" id="faqText10">질문10</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            
+                        </ol>
+                    </div>
+                    
+                    <div class="tab-content" id="mainFaqDetail" style="display: none;">
+                        <div class="tab-pane active">
+                            <div class="module-detail detail-accordion"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--문의 행동 -->
+        <div class="layout-content layout-gray">
+            <div class="grid-center" style="display:block;">
+                </div>
+                <div class="module-card-list group-col5">
+                    <ol>
+                        
+                        <li class="list-item">
+                            <div class="module-card card-default size-min">
+                                <span class="card-inner">							
+                                    <span class="card-txt" id="categoryText1">문의글 남기러 가기</span>							
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="list-item">
+                            <div class="module-card card-default size-min">
+                                <span class="card-inner">							
+                                    <span class="card-txt" id="categoryText2">문의글 목록 확인하기</span>							
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="list-item">
+                            <div class="module-card card-default size-min">
+                                <span class="card-inner">							
+                                    <span class="card-txt" id="categoryText3">면담 및 상담일 신청하기</span>							
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="list-item">
+                            <div class="module-card card-default size-min">
+                                <span class="card-inner">							
+                                    <span class="card-txt" id="categoryText4">실시간 전화 상담 연결하기</span>							
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                       
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>  
+
+
+    <script>
+        // 클릭 이벤트를 처리할 요소를 선택합니다.
+        const cardTxt1 = document.getElementById('faqText1');
+        const answerTab1 = document.getElementById('faqAnswer1');
+        const cardTxt2 = document.getElementById('faqText2');
+        const answerTab2 = document.getElementById('faqAnswer2');
+        const category1 = document.getElementById('categoryText1');
+        const category2 = document.getElementById('categoryText2');
+        const category3 = document.getElementById('categoryText3');
+        const category4 = document.getElementById('categoryText4');
+        const calendar = document.createElement('input');
+        const message = document.createElement('p');
+  
+        // 변수 주석처리 //
+        // inquiries -> 문의글 저장 배열
+        // title -> 문의글 제목
+        // content -> 문의글 내용
+        // contact -> 문의글 남길 연락처 -> 아이디 연동시 수정
+        // inquiryList -> 문의글 목록처리
+        // selectedDate -> 예약 날짜선택 
+        // previousDate  -> 이전날짜 확인 
+        // confirmCancel -> 예약취소
+        // phoneNumber -> 문의상담연결번호
+        // i -> 반복문위해 돌리는중
+
+
+        // 클릭 이벤트 리스너를 추가합니다.
+        cardTxt1.addEventListener('click', function() {
+            // 탭을 토글링하여 보이거나 숨깁니다.
+            if (answerTab1.style.display === 'none') {
+                answerTab1.style.display = 'block';
+            } else {
+                answerTab1.style.display = 'none';
+            }
+        });
+
+        cardTxt2.addEventListener('click', function() {
+            // 탭을 토글링하여 보이거나 숨깁니다.
+            if (answerTab2.style.display === 'none') {
+                answerTab2.style.display = 'block';
+            } else {
+                answerTab2.style.display = 'none';
+            }
+        });
+
+  
+        category1.addEventListener('mouseenter', function() {
+            category1.style.color = 'red';
+        });
+        category1.addEventListener('mouseleave', function() {
+            category1.style.color = '';
+        });
+        category2.addEventListener('mouseenter', function() {
+            category2.style.color = 'red';
+        });
+        category2.addEventListener('mouseleave', function() {
+            category2.style.color = '';
+        });
+        category3.addEventListener('mouseenter', function() {
+            category3.style.color = 'red';
+        });
+        category3.addEventListener('mouseleave', function() {
+            category3.style.color = '';
+        });
+        category4.addEventListener('mouseenter', function() {
+            category4.style.color = 'red';
+        });
+        category4.addEventListener('mouseleave', function() {
+            category4.style.color = '';
+        });
+
+  // 문의글을 저장할 배열 선언
+  var inquiries = [];
+
+    // 문의글 남기기 버튼 클릭 이벤트 핸들러
+    function submitInquiry() {
+  var title = prompt("문의 제목을 입력하세요.");
+  if (title === null || title === ""){
+  return;
+}
+  var content = prompt("문의 내용을 입력하세요.");
+  if (content=== null || content === ""){
+    return;
+}
+  var contact = prompt("연락처를 입력하세요.");
+  if (contact === null || contact === "") {
+    return;
+  }
+
+
+  var inquiry = {
+    title: title,
+    content: content,
+    contact: contact,
+  };
+
+  inquiries.push(inquiry);
+  alert("문의글이 저장되었습니다.");
+}
+
+  // 문의글 남기러 가기 버튼 클릭 이벤트 리스너 등록
+  category1.addEventListener("click", submitInquiry);
+  
+  // 문의글 목록 확인하기 버튼 클릭 이벤트 핸들러
+  function viewInquiries() {
+    if (inquiries.length === 0) {
+      alert("저장된 문의글이 없습니다.");
+    } else {
+      var inquiryList = "";
+      for (var i = 0; i < inquiries.length; i++) {
+        var inquiry = inquiries[i];
+        inquiryList +=
+          "제목: " +
+          inquiry.title +
+          "\n내용: " +
+          inquiry.content +
+          "\n연락처: " +
+          inquiry.contact +
+          "\n\n";
+      }
+      alert(inquiryList);
+    }
+  }
+
+  // 문의글 목록 확인하기 버튼 클릭 이벤트 리스너 등록
+  category2.addEventListener("click", viewInquiries);
+
+    // 날짜 변수 선언
+    var selectedDate = null;
+
+// 달력을 표시하는 함수
+function showCalendar() {
+  category3.parentNode.insertBefore(calendar, category3.nextSibling);
+  calendar.type = 'date';
+  calendar.addEventListener('change', selectDate);
+}
+
+// 날짜 선택 이벤트 처리 함수
+function selectDate() {
+  var previousDate = selectedDate; // 이전에 선택된 날짜 저장
+  selectedDate = new Date(calendar.value);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // 오늘 날짜의 시간을 00:00:00으로 설정
+
+  if (previousDate !== null) {
+    // 이전에 선택된 날짜가 있는 경우 예약 취소
+    var confirmCancel = confirm("이미 예약된 날짜가 있습니다. 예약을 취소하시겠습니까?");
+    if (confirmCancel) {
+      selectedDate = null; // 예약 취소된 경우 날짜 초기화
+    }
+  }
+  
+  if (selectedDate !== null) {
+    // 오늘 이전 날짜인 경우
+    if (selectedDate < today) {
+        selectedDate = null;
+      message.textContent = '신청할 수 없는 날짜입니다';
+      message.style.color = 'red';
+    } else {
+      message.textContent = `신청이 완료되었습니다! 선택한 날짜: ${selectedDate.toDateString()}`;
+      message.style.color = 'green';
+    }
+  } else {
+    message.textContent = '예약이 취소되었습니다.';
+    message.style.color = 'red';
+  }
+
+  category3.parentNode.insertBefore(message, category3.nextSibling);
+  calendar.remove();
+  calendar.removeEventListener('change', selectDate);
+}
+
+// 클릭 이벤트 리스너를 추가합니다.
+category3.addEventListener('click', showCalendar);
+
+// 전화 상담 연결하기 버튼 클릭 이벤트 핸들러
+function connectPhoneConsultation() {
+  var phoneNumber = '01091806133';
+  alert('연결 가능한 번호: ' + phoneNumber);
+  window.location.href = 'tel:' + phoneNumber;
+}
+
+// 클릭 이벤트 리스너를 추가합니다.
+category4.addEventListener('click', connectPhoneConsultation);
+
+
+//title 이동 
+document.getElementById("tit-int").addEventListener("click", function() {
+  window.location.href = "index.html"; // 이동하고자 하는 페이지 URL로 변경해주세요
+});
+
+document.getElementById("tit-inq").addEventListener("click", function() {
+  window.location.href = "inquiry.html"; // 이동하고자 하는 페이지 URL로 변경해주세요
+});
+
+    </script>
+    
+    </body>
+</html>

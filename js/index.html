@@ -8,12 +8,21 @@
     <div class="bg-cover"></div>  
     <div id="demo-container">
         <ul id="simple-menu">
-            <li><a><span>소개 글</span></a></li>
-            <li><a><span>자료</span></a></li>
-            <li><a><span>결제</span></a></li>
-            <li><a><span>문의상항</span></a></li>
+            <li><a><span id="tit-int">소개 글</span></a></li>
+            <li><a><span id="tit-mat">자료</span></a></li>
+            <li><a><span id="tit-pay">결제</span></a></li>
+            <li><a><span id="tit-inq">문의상항</span></a></li>
         </ul>
     </div>
-    
+    <script>
+      //title 이동 
+document.getElementById("tit-int").addEventListener("click", function() {
+  window.location.href = "index.html"; // 이동하고자 하는 페이지 URL로 변경해주세요
+});
+
+document.getElementById("tit-inq").addEventListener("click", function() {
+  window.location.href = "inquiry.html"; // 이동하고자 하는 페이지 URL로 변경해주세요
+});
+    </script>
   </body>
 </html>
